@@ -11,10 +11,16 @@ public class Demo {
 		Statement st = con.createStatement();
 		ResultSet rs = st.executeQuery(query);
 		
-		// fetching data
-		rs.next();
-		String name = rs.getString("sname");
-		System.out.println(name);
+//		fetching a single data
+//		rs.next();
+//		String name = rs.getString("sname");
+//		System.out.println(name);
+		
+//		fetching whole table
+		while(rs.next())
+		{
+			System.out.println("Name "+rs.getString(2)+" & Roll "+rs.getInt(1));
+		}
 		
 		st.close();
 		con.close();
