@@ -4,7 +4,7 @@ public class Demo {
 	public static void main(String[] args) throws Exception {
 		String url="jdbc:mysql://localhost:3306/sukritidb";
 		String uname="root";
-		String pass="Telusko@123";
+		String pass="Lol!";
 		String query = "select sname from student where rollno=2";
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		Connection con = DriverManager.getConnection(url,uname,pass);
