@@ -5,7 +5,7 @@ public class Demo {
 		String url="jdbc:mysql://localhost:3306/sukritidb";
 		String uname="root";
 		String pass="Lol!";
-		String query = "select sname from student where rollno=2";
+		String query = "select sname from student where rollno=2"; // database has 2 columns "sname" and "rollno"
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		Connection con = DriverManager.getConnection(url,uname,pass);
 		Statement st = con.createStatement();
