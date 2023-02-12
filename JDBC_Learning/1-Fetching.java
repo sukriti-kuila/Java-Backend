@@ -6,7 +6,7 @@ public class Demo {
 		String uname="root";
 		String pass="Lol!";
 		String query = "select sname from student where rollno=2"; // database has 2 columns "sname" and "rollno"
-		Class.forName("com.mysql.cj.jdbc.Driver");
+		Class.forName("com.mysql.cj.jdbc.Driver"); // don't need to write this anymore
 		Connection con = DriverManager.getConnection(url,uname,pass);
 		Statement st = con.createStatement();
 		ResultSet rs = st.executeQuery(query);
