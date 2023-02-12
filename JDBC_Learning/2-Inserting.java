@@ -14,7 +14,7 @@ public class Demo {
 		String url="jdbc:mysql://localhost:3306/sukritidb";
 		String uname="root";
 		String pass="Lol!";
-		Class.forName("com.mysql.cj.jdbc.Driver");
+		Class.forName("com.mysql.cj.jdbc.Driver"); // don't need to write this anymore
 		Connection con = DriverManager.getConnection(url,uname,pass);
 		Statement st = con.createStatement();
 		int count = st.executeUpdate(insert_query);// st.executeUpdate(query) DML mode od SQL
@@ -26,7 +26,7 @@ public class Demo {
 		String url="jdbc:mysql://localhost:3306/sukritidb";
 		String uname="root";
 		String pass="Telusko@123";
-		Class.forName("com.mysql.cj.jdbc.Driver");
+		Class.forName("com.mysql.cj.jdbc.Driver");// don't need to write this anymore
 		Connection con = DriverManager.getConnection(url,uname,pass);
 		PreparedStatement st = con.prepareStatement(insert_query);//changed
 		st.setInt(1,r);//added
