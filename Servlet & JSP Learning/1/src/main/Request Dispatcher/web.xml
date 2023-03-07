@@ -10,6 +10,8 @@
   	<url-pattern> /add </url-pattern>
   </servlet-mapping>
   
+  // Below lines of codes have been added
+  
   <servlet>
   	<servlet-name>square</servlet-name>
   	<servlet-class>com.servlet.SquareServlet</servlet-class>
